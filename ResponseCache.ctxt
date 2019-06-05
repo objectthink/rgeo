@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ResponseCache
+comment1.params=
+comment1.target=ResponseCache()
+comment2.params=maxDistanceThreshold
+comment2.target=ResponseCache(int)
+comment3.params=distanceInMeters
+comment3.target=void\ setMaxDistanceThreshold(int)
+comment4.params=request\ response
+comment4.target=void\ add(Request,\ Response)
+comment5.params=request
+comment5.target=Response\ find(Request)
+comment6.params=r1\ r2
+comment6.target=double\ distance(Request,\ Request)
+comment6.text=\n\ FROM\ https\://stackoverflow.com/questions/3694380/calculating-distance-between-two-points-using-latitude-longitude\n\ \n\ Calculate\ distance\ between\ two\ points\ in\ latitude\ and\ longitude\ taking\n\ into\ account\ height\ difference.\ If\ you\ are\ not\ interested\ in\ height\n\ difference\ pass\ 0.0.\ Uses\ Haversine\ method\ as\ its\ base.\n\ \n\ lat1,\ lon1\ Start\ point\ lat2,\ lon2\ End\ point\ el1\ Start\ altitude\ in\ meters\n\ el2\ End\ altitude\ in\ meters\n\ @returns\ Distance\ in\ Meters\n
+numComments=7

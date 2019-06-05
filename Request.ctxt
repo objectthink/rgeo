@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Request
+comment0.text=\n\ Write\ a\ description\ of\ class\ Request\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=lat\ lon
+comment1.target=Request(double,\ double)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Request\n
+comment2.params=
+comment2.target=double\ lat()
+comment3.params=
+comment3.target=double\ lon()
+comment4.params=
+comment4.target=java.lang.String\ xmlBody()
+comment5.params=lat\ lon
+comment5.target=java.lang.String\ createRequestFor(double,\ double)
+numComments=6

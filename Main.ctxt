@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Main
+comment1.params=
+comment1.target=Main()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Main\n
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=response
+comment3.target=void\ action(Response)
+comment4.params=response
+comment4.target=void\ action(Response)
+numComments=5

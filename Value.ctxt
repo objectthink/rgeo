@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Value
+comment0.text=\n\ Write\ a\ description\ of\ class\ Value\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=java.lang.Object\ value()
+comment2.params=value
+comment2.target=void\ setValue(java.lang.Object)
+comment3.params=initial
+comment3.target=Value(java.lang.Object)
+numComments=4
