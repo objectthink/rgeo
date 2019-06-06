@@ -20,6 +20,7 @@ import java.io.*;
 public class Response
 {
     String _xml;
+    int _responseCode;
     
     /**
      * Constructor for objects of class Response
@@ -29,6 +30,16 @@ public class Response
         _xml = xml;
     }
 
+    public void setResponseCode(int code)
+    {
+        _responseCode = code;
+    }
+    
+    public int responseCode()
+    {
+        return _responseCode;
+    }
+    
     public String xml()
     {
         return _xml;

@@ -63,8 +63,19 @@ public class Command
                 @Override
                 public void action(Response response)
                 {
-                    fResponseCache.add(new Request(lat,lon), response);
-                    fCallback.action(response);
+                    if(response.responseCode() == 200)
+                    {
+                        fResponseCache.add(new Request(lat,lon), response);
+                        fCallback.action(response);
+                    }
+                    else
+                    {
+                        fCallback.error(response.responseCode());
+                    }
+                }
+                
+                public void error(int errorCode)
+                {
                 }
             });
         }
@@ -97,11 +108,11 @@ public class Command
         BufferedReader in = new BufferedReader(
             new InputStreamReader(con.getInputStream()));
             String inputLine;
-            StringBuffer response = new StringBuffer();
+            StringBuffer responseString = new StringBuffer();
 
         while ((inputLine = in.readLine()) != null)
         {
-            response.append(inputLine);
+            responseString.append(inputLine);
         }
     
         in.close();
@@ -111,7 +122,11 @@ public class Command
 
         //xmlToObject(response.toString());
         
-        return new Response(response.toString());
+        //CREATE REPONSE - SET RESPONSE CODE - INSTANCE AND RETURN IT
+        Response response = new Response(responseString.toString());
+        response.setResponseCode(responseCode);
+        
+        return response;
     }    
 
     

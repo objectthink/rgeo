@@ -8,4 +8,5 @@
 public interface IAction<T>
 {
     void action(T t);
+    void error(int responseCode);
 }

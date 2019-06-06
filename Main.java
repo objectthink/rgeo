@@ -112,6 +112,12 @@ public class Main
                    //System.out.println("got response:" + response);
                    response.toConsole();
                }
+               
+               @Override
+               public void error(int responseCode)
+               {
+                   System.out.println("an error was reported:" + responseCode);
+               }
            });
         
            //SCAN INPUT FOR DOUBLES FOREVER, LAT THEN LON
@@ -129,6 +135,13 @@ public class Main
                    {
                        response.toConsole();
                    }
+
+                   @Override
+                   public void error(int responseCode)
+                   {
+                       System.out.println("an error was reported:" + responseCode);
+                   }
+
                 });
            }
 
