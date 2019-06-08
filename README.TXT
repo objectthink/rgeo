@@ -25,6 +25,12 @@ command.get(40.070170,-75.465230, new IAction<Response>()
     {
         System.out.println("got response:" + response.xml());
     }
+    
+    @Override
+    public void error(int responseCode)
+    {
+        System.out.println("an error was reported:" + responseCode);
+    }
 });
 
 
